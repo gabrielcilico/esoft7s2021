@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <Hello />
-      <Contador valorMinimo={10} valorMaximo={50}></Contador>
+      <Contador valorMinimo={10} valorMaximo={15}></Contador>
     </div>
   );
 }
