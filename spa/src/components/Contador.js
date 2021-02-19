@@ -22,10 +22,10 @@ const styles = {
 const Contador = (props) => {
 
     let {valorMinimo, valorMaximo} = props;
-    let [valor, setValor] = React.useState(valorMinimo);
+    const [valor, setValor] = React.useState(valorMinimo);
 
-    const incrementa = () => setValor(valor >= valorMaximo ? valorMaximo : ++valor);
-    const decrementa = () => setValor(valor <= valorMinimo ? valorMinimo : --valor);
+    const incrementa = () => setValor(valor >= valorMaximo ? valorMaximo : valor+1);
+    const decrementa = () => setValor(valor <= valorMinimo ? valorMinimo : valor-1);
 
     return (
         <div style={styles.container}>

@@ -5,13 +5,12 @@ const Hello = () => {
     let [hello, setHello] = React.useState("Hello component!");
 
     const get = async () => {
-        let response = await axios.get('/api/hello')
-        console.log(response)
-        setHello(response.data)
+        let response = await axios.get('/api/hello');
+        setHello(response.data);
     }
 
     React.useEffect(() => {
-        get()
+        get();
     }, [])
 
     return (
