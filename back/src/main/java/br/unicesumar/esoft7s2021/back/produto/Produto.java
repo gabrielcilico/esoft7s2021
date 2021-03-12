@@ -1,6 +1,5 @@
-package br.unicesumar.esoft7s2021.back.pessoa;
+package br.unicesumar.esoft7s2021.back.produto;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,7 +9,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
-public class Pessoa {
+public class Produto {
 
     @Getter @Id private String id;
     @Getter @Setter private String nome;
